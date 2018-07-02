@@ -1,12 +1,16 @@
 @page {
-    size: A4;
+    size: A4 landscape;
     margin: 0;
+}
+
+@media print {
+    .pages { page-break-after: always; }
 }
 html {
     background: #eee;
 }
 body {
-    height: 210mm;
+    height: 209mm;
     width: 297mm;
     margin: 0;
 }
@@ -16,7 +20,7 @@ body {
 #cs-race-class-level { grid-area: race-class-level; }
 #cs-inspiration { grid-area: inspiration; }
 #cs-armor-class { grid-area: armor-class; }
-#cs-inititiative { grid-area: initiative; }
+#cs-initiative { grid-area: initiative; }
 #cs-speed { grid-area: speed; }
 #cs-max-hp { grid-area: max-hp; }
 #cs-temp-hp { grid-area: temp-hp; }
@@ -44,8 +48,7 @@ body {
 
 .page {
     background-color: white;
-    border: 1px solid black;
-    padding: 1.5mm;
+    padding: 2mm;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(16, 11mm);
@@ -74,4 +77,5 @@ body {
 
 .page > div {
     border: 1px solid black;
+    padding: 0.5mm;
 }
