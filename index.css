@@ -41,6 +41,7 @@ body {
     grid-template-rows: 100%;
 }
 
+
 .page {
     background-color: white;
     border: 1px solid black;
@@ -48,6 +49,10 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(16, 11mm);
+    grid-gap: 2mm;
+}
+
+#page-1 {
     grid-template-areas:
         'name name name background background background'
         'race-class-level race-class-level race-class-level race-class-level inspiration inspiration'
@@ -65,7 +70,6 @@ body {
         'wisdom skills skills attacks attacks attacks'
         'charisma skills skills attacks attacks attacks'
         'charisma skills skills attacks attacks attacks';
-    grid-gap: 2mm;
 }
 
 .page > div {
