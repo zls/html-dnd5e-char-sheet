@@ -1,0 +1,73 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+html {
+    background: #eee;
+}
+body {
+    height: 210mm;
+    width: 297mm;
+    margin: 0;
+}
+
+#cs-name { grid-area: name; }
+#cs-background { grid-area: background; }
+#cs-race-class-level { grid-area: race-class-level; }
+#cs-inspiration { grid-area: inspiration; }
+#cs-armor-class { grid-area: armor-class; }
+#cs-inititiative { grid-area: initiative; }
+#cs-speed { grid-area: speed; }
+#cs-max-hp { grid-area: max-hp; }
+#cs-temp-hp { grid-area: temp-hp; }
+#cs-hit-dice { grid-area: hit-dice; }
+#cs-proficiency-bonus { grid-area: proficiency-bonus; }
+#cs-passive-perception { grid-area: passive-perception; }
+#cs-saving-throws { grid-area: saving-throws; }
+#cs-skills { grid-area: skills; }
+#cs-attacks { grid-area: attacks ; }
+
+
+#cs-strength { grid-area: strength; }
+#cs-dexterity { grid-area: dexterity; }
+#cs-constitution { grid-area: constitution; }
+#cs-intelligence { grid-area: intelligence; }
+#cs-wisdom { grid-area: wisdom; }
+#cs-charisma { grid-area: charisma; }
+
+.pages {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.page {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.5mm;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 11mm);
+    grid-template-areas:
+        'name name name background background background'
+        'race-class-level race-class-level race-class-level race-class-level inspiration inspiration'
+        'armor-class initiative speed max-hp max-hp temp-hp'
+        'armor-class initiative speed max-hp max-hp temp-hp'
+        'strength proficiency-bonus proficiency-bonus max-hp max-hp hit-dice'
+        'strength passive-perception passive-perception max-hp max-hp hit-dice'
+        'dexterity saving-throws saving-throws attacks attacks attacks'
+        'dexterity saving-throws saving-throws attacks attacks attacks'
+        'constitution skills skills attacks attacks attacks'
+        'constitution skills skills attacks attacks attacks'
+        'intelligence skills skills attacks attacks attacks'
+        'intelligence skills skills attacks attacks attacks'
+        'wisdom skills skills attacks attacks attacks'
+        'wisdom skills skills attacks attacks attacks'
+        'charisma skills skills attacks attacks attacks'
+        'charisma skills skills attacks attacks attacks';
+    grid-gap: 2mm;
+}
+
+.page > div {
+    border: 1px solid black;
+}
