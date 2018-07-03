@@ -75,7 +75,31 @@ body {
         'charisma skills skills attacks attacks attacks';
 }
 
-.page > div {
-    border: 1px solid black;
-    padding: 0.5mm;
+.box {
+    border: 0.2mm solid black;
+    border-radius: 1mm;
+    display: inline-block;
+    box-shadow: 0.3mm 0.2mm;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    margin: 0mm;
+    padding: 1.3mm;
+    display: inline-block;
+}
+
+.card-title-full {
+    margin: 0mm;
+    padding: 1.3mm;
+    border-bottom: 0.2mm solid black;
+}
+
+.card-text {
+    padding-right: 2mm;
+    float: right;
 }
