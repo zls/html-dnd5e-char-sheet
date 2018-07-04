@@ -61,8 +61,8 @@ body {
     grid-template-areas:
         'name name name background background background'
         'race-class-level race-class-level race-class-level race-class-level inspiration inspiration'
-        'armor-class initiative speed current-hp max-hp temp-hp'
-        'armor-class initiative speed current-hp max-hp temp-hp'
+        'armor-class initiative speed max-hp current-hp temp-hp'
+        'armor-class initiative speed max-hp current-hp temp-hp'
         'strength proficiency-bonus proficiency-bonus death-saves death-saves hit-dice'
         'strength passive-perception passive-perception death-saves death-saves hit-dice'
         'dexterity saving-throws saving-throws attacks attacks attacks'
