@@ -15,6 +15,7 @@ body {
     margin: 0;
 }
 
+/* Primary information */
 #cs-name { grid-area: name; }
 #cs-background { grid-area: background; }
 #cs-race-class-level { grid-area: race-class-level; }
@@ -33,13 +34,30 @@ body {
 #cs-skills { grid-area: skills; }
 #cs-attacks { grid-area: attacks ; }
 
-
 #cs-strength { grid-area: strength; }
 #cs-dexterity { grid-area: dexterity; }
 #cs-constitution { grid-area: constitution; }
 #cs-intelligence { grid-area: intelligence; }
 #cs-wisdom { grid-area: wisdom; }
 #cs-charisma { grid-area: charisma; }
+
+/* Character information */
+#cs-appearance { grid-area: appearance; }
+#cs-personality { grid-area: personality; }
+#cs-ideals { grid-area: ideals; }
+#cs-bonds { grid-area: bonds; }
+#cs-flaws { grid-area: flaws; }
+
+#cs-age { grid-area: age; }
+#cs-height { grid-area: height; }
+#cs-weight { grid-area: weight; }
+#cs-eyes { grid-area: eyes; }
+#cs-skin { grid-area: skin; }
+#cs-hair { grid-area: hair; }
+#cs-other { grid-area: other; }
+#cs-languages { grid-area: languages; }
+#cs-proficencies { grid-area: proficencies; }
+#cs-backstory { grid-area: backstory; }
 
 .pages {
     display: grid;
@@ -75,6 +93,26 @@ body {
         'wisdom skills skills attacks attacks attacks'
         'charisma skills skills attacks attacks attacks'
         'charisma skills skills attacks attacks attacks';
+}
+
+#page-2 {
+    grid-template-areas:
+    'appearance appearance appearance personality personality personality'
+    'appearance appearance appearance personality personality personality'
+    'appearance appearance appearance ideals ideals ideals'
+    'appearance appearance appearance ideals ideals ideals'
+    'appearance appearance appearance bonds bonds bonds'
+    'appearance appearance appearance bonds bonds bonds'
+    'age height weight flaws flaws flaws'
+    'eyes skin hair flaws flaws flaws'
+    'other other other other other other'
+    'other other other other other other'
+    'languages languages languages proficencies proficencies proficencies'
+    'languages languages languages proficencies proficencies proficencies'
+    'backstory backstory backstory backstory backstory backstory'
+    'backstory backstory backstory backstory backstory backstory'
+    'backstory backstory backstory backstory backstory backstory'
+    'backstory backstory backstory backstory backstory backstory';
 }
 
 .box {
