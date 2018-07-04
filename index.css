@@ -104,10 +104,21 @@ body {
     float: right;
 }
 
+.card-footer-text {
+    margin: 0;
+}
+
 .card-text-lg {
     padding-right: 2mm;
     float: right;
     font-size: x-large;
+}
+
+.card-footer-full {
+    margin: 0mm;
+    padding: 1.3mm;
+    clear: both;
+    border-top: 0.2mm solid black;
 }
 
 .attribute {
@@ -128,4 +139,12 @@ ul {
 
 .unfilled {
     list-style-type: circle;
+}
+
+span.circle {
+    border-radius: 50%;
+    display: inline-block;
+    border: 0.2mm solid black;
+    height: 2mm;
+    width: 2mm;
 }
