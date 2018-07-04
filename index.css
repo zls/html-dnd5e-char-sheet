@@ -113,3 +113,19 @@ body {
 .attribute {
     font-size: x-small;
 }
+
+.float-right {
+    float: right;
+    padding-right: 3mm;
+}
+
+ul {
+    font-size: 3mm;
+    margin: 0;
+    padding: 1mm 2mm;
+    list-style-position: inside;
+}
+
+.unfilled {
+    list-style-type: circle;
+}
