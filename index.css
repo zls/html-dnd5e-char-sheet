@@ -103,3 +103,13 @@ body {
     padding-right: 2mm;
     float: right;
 }
+
+.card-text-lg {
+    padding-right: 2mm;
+    float: right;
+    font-size: x-large;
+}
+
+.attribute {
+    font-size: x-small;
+}
