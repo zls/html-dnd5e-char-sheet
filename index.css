@@ -125,6 +125,7 @@ body {
 .card {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .card-title {
@@ -188,4 +189,14 @@ span.circle {
     border: 0.2mm solid black;
     height: 2mm;
     width: 2mm;
+}
+
+.lined {
+    background-color: #fff; 
+    background-image: linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 4mm;
+    margin-left: 1mm;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
