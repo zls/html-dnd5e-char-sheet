@@ -23,6 +23,8 @@ body {
 #cs-initiative { grid-area: initiative; }
 #cs-speed { grid-area: speed; }
 #cs-max-hp { grid-area: max-hp; }
+#cs-current-hp { grid-area: current-hp; }
+#cs-death-saves { grid-area: death-saves; }
 #cs-temp-hp { grid-area: temp-hp; }
 #cs-hit-dice { grid-area: hit-dice; }
 #cs-proficiency-bonus { grid-area: proficiency-bonus; }
@@ -59,10 +61,10 @@ body {
     grid-template-areas:
         'name name name background background background'
         'race-class-level race-class-level race-class-level race-class-level inspiration inspiration'
-        'armor-class initiative speed max-hp max-hp temp-hp'
-        'armor-class initiative speed max-hp max-hp temp-hp'
-        'strength proficiency-bonus proficiency-bonus max-hp max-hp hit-dice'
-        'strength passive-perception passive-perception max-hp max-hp hit-dice'
+        'armor-class initiative speed current-hp max-hp temp-hp'
+        'armor-class initiative speed current-hp max-hp temp-hp'
+        'strength proficiency-bonus proficiency-bonus death-saves death-saves hit-dice'
+        'strength passive-perception passive-perception death-saves death-saves hit-dice'
         'dexterity saving-throws saving-throws attacks attacks attacks'
         'dexterity saving-throws saving-throws attacks attacks attacks'
         'constitution skills skills attacks attacks attacks'
@@ -106,6 +108,7 @@ body {
 
 .card-footer-text {
     margin: 0;
+    padding: 2mm;
 }
 
 .card-text-lg {
